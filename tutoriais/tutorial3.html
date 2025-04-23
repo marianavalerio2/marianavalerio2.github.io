@@ -1,1 +1,111 @@
-<h1>Tutorial 3</h1><p>Conteúdo do tutorial 3.</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorial 1 - Experiência</title>
+  <style>
+    :root {
+      --dark-1: #02152b;
+      --dark-2: #021d34;
+      --primary: #02253d;
+      --highlight: #94b8d7;
+      --accent: #7498b6;
+      --light-bg: #f2f7fa;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--highlight);
+      color: white;
+      display: flex;
+    }
+
+    nav {
+      width: 220px;
+      background-color: var(--dark-2);
+      padding: 20px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--light-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: var(--dark-1);
+    }
+
+    p {
+      line-height: 1.6;
+      color: #001b33;
+    }
+
+    .dica {
+      background: var(--highlight);
+      color: var(--dark-2);
+      border-left: 4px solid var(--accent);
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    a.tutorial-link {
+      color: var(--light-bg);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">🏠 Início</a>
+    <a href="tutorial1.html">Tutorial 1</a>
+    <a href="tutorial2.html">Tutorial 2</a>
+    <a href="tutorial3.html">Tutorial 3</a>
+    <a href="tutorial4.html">Tutorial 4</a>
+    <a href="tutorial5.html">Tutorial 5</a>
+    <a href="../kernel/patch.html">🛠 Kernel</a>
+  </nav>
+
+  <main>
+    <h1>Tutorial 3 – Começando a Entender de Verdade 🧠</h1>
+  
+    <p>Foi nesse ponto que as coisas começaram a fazer mais sentido. Finalmente senti que não estava só copiando comandos – comecei a entender <strong>o que cada etapa realmente faz</strong>.</p>
+  
+    <p>Neste tutorial, aprendemos como gerar mudanças nos arquivos do kernel e como subir essas alterações para testá-las. O processo é simples na teoria: você faz as mudanças, compila e testa 🔁. Fiz essa parte sem utilizar o <code>km</code>, o que deixou tudo um pouco mais manual, mas também mais didático pra mim.</p>
+  
+    <p>🚧 Ainda assim, nem tudo foi perfeito. Tive alguns erros na parte 3 do tutorial e precisei usar o <code>create_vm_virsh</code> para resolver — algo que não estava previsto no meu planejamento inicial.</p>
+  
+    <p>📎 Link para o tutorial:<br>
+      <a class="tutorial-link" href="https://flusp.ime.usp.br/kernel/modules-intro/" target="_blank">
+        Tutorial 3 – Introdução a Módulos no Kernel
+      </a>
+    </p>
+  
+    <div class="dica">
+      <strong>💡 Dica:</strong> Instale todas as dependências indicadas no <strong>item 2</strong> do tutorial <em>antes</em> de começar.<br>
+      Isso pode poupar <strong>muito tempo</strong> e evitar erros chatos lá na frente! 😉
+    </div>
+  </main>  
+
+</body>
+</html>
