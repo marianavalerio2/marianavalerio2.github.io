@@ -1,1 +1,110 @@
-<h1>Tutorial 4</h1><p>Conteúdo do tutorial 4.</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorial 1 - Experiência</title>
+  <style>
+    :root {
+      --dark-1: #02152b;
+      --dark-2: #021d34;
+      --primary: #02253d;
+      --highlight: #94b8d7;
+      --accent: #7498b6;
+      --light-bg: #f2f7fa;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--highlight);
+      color: white;
+      display: flex;
+    }
+
+    nav {
+      width: 220px;
+      background-color: var(--dark-2);
+      padding: 20px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--light-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: var(--dark-1);
+    }
+
+    p {
+      line-height: 1.6;
+      color: #001b33;
+    }
+
+    .dica {
+      background: var(--highlight);
+      color: var(--dark-2);
+      border-left: 4px solid var(--accent);
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    a.tutorial-link {
+      color: var(--light-bg);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">🏠 Início</a>
+    <a href="tutorial1.html">Tutorial 1</a>
+    <a href="tutorial2.html">Tutorial 2</a>
+    <a href="tutorial3.html">Tutorial 3</a>
+    <a href="tutorial4.html">Tutorial 4</a>
+    <a href="tutorial5.html">Tutorial 5</a>
+    <a href="../kernel/patch.html">🛠 Kernel</a>
+  </nav>
+
+  <main>
+    <h1>Tutorial 4 – Tudo Fluiu! 😎</h1>
+  
+    <p>Finalmente um tutorial que fluiu do começo ao fim! Depois de tantas curvas nos anteriores, esse aqui foi muito mais tranquilo.</p>
+  
+    <p>Aprendi sobre os <strong>char drivers</strong>, e foi muito interessante ver como podemos interagir com o kernel de uma forma mais direta. O tutorial está bem escrito e com exemplos que funcionam logo de cara — o que dá uma sensação ótima de progresso.</p>
+  
+    <p>📎 Link para o tutorial:<br>
+      <a class="tutorial-link" href="https://flusp.ime.usp.br/kernel/char-drivers-intro/" target="_blank">
+        Tutorial 4 – Introdução a Drivers
+      </a>
+    </p>
+  
+    <div class="dica">
+      <strong>💡 Dica:</strong> Leia os comentários no código com atenção — o código roda tranquilo, mas o que faz a diferença é entender!<br>
+      Muitas vezes, entender o que está por trás do que você está digitando é o que transforma um exercício técnico em um verdadeiro aprendizado. ✨
+    </div>
+  </main>
+  
+
+</body>
+</html>
