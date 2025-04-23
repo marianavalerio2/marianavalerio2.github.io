@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <title>Blog da Mariana Valério</title>
   <style>
+    :root {
+      --dark-1: #02152b;
+      --dark-2: #021d34;
+      --primary: #02253d;
+      --highlight: #94b8d7;
+      --accent: #7498b6;
+      --light-bg: #f2f7fa;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'S--dark-1egoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #94b8d7;
+      background: var(--highlight);
       color: #021d34;
     }
     header {
-      background: #02152b;
+      background:var(--dark-1);
       color: white;
       padding: 30px;
       text-align: center;
@@ -19,7 +28,7 @@
     main {
       max-width: 800px;
       margin: 40px auto;
-      background: white;
+      background: var(--light-bg);
       padding: 40px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -31,14 +40,14 @@
       width: 120px;
       height: 120px;
       object-fit: cover;
-      border: 3px solid #365b77;
+      border: 3px solid var(--accent);
     }
     h1, h2 {
       color: #02253d;
     }
     a {
       text-decoration: none;
-      color: #365b77;
+      color: var(--primary);
     }
     .menu a {
       display: block;
