@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorial 1 - Experiência</title>
+  <style>
+    :root {
+      --dark-1: #02152b;
+      --dark-2: #021d34;
+      --primary: #02253d;
+      --highlight: #94b8d7;
+      --accent: #7498b6;
+      --light-bg: #f2f7fa;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--highlight);
+      color: white;
+      display: flex;
+    }
+
+    nav {
+      width: 220px;
+      background-color: var(--dark-2);
+      padding: 20px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--light-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: var(--dark-1);
+    }
+
+    p {
+      line-height: 1.6;
+      color: #001b33;
+    }
+
+    .dica {
+      background: var(--highlight);
+      color: var(--dark-2);
+      border-left: 4px solid var(--accent);
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    a.tutorial-link {
+      color: var(--light-bg);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">🏠 Início</a>
+    <a href="../tutoriais/tutorial1.html">Tutorial 1</a>
+    <a href="../tutoriais/tutorial2.html">Tutorial 2</a>
+    <a href="../tutoriais/tutorial3.html">Tutorial 3</a>
+    <a href="../tutoriais/tutorial4.html">Tutorial 4</a>
+    <a href="../tutoriais/tutorial5.html">Tutorial 5</a>
+    <a href="../kernel/patch.html">🛠 Kernel</a>
+    <a href="../kernel/patchresposta.html">🛠 Resposta Patch</a>
+  </nav>
+
+  <main>
+    <h1>📬 Resposta do Patch</h1>
+
+    <p>Ao final do processo, fizemos o envio de <strong>duas alterações</strong> diferentes. Ambas foram fruto de estudo e testes. Foi muito gratificante receber o retorno da comunidade, mesmo quando ele não foi o que a gente esperava!</p>
+
+    <figure>
+      <img src="images/patch_1.png" alt="Imagem da primeira alteração" style="max-width:100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px;">
+      <figcaption>🛠️ Primeiro envio de patch</figcaption>
+    </figure>
+
+    <h2>✅ Envio 1 — Aceito com observação</h2>
+    <p>Essa foi a nossa contribuição inicialmente menor, enviada pelo Arthur, mas que fazia a correção no Kconfig. Ela foi aceita! 🎉</p>
+
+    <p>O primeiro mantenedor, Jonathan Cameron fez um comentário por conta do título usando no envio do Patch, mas aceitou. Provavelmente isso aconteceu porque demoramos um pouco para enviar depois da revisão inicial.</p>
+
+    <p>O mantenedor apenas observou que <strong>não havíamos feito o refresh</strong> (substitua aqui pelo nome exato do comando — como <code>git format-patch -v2</code> ou algo do tipo, se souber). Provavelmente isso aconteceu porque demoramos um pouco para enviar depois da revisão inicial.</p>
+
+    <p>Ainda assim, ver nossa mudança entrando no repositório oficial foi muito bom! Ver que de fato por menor que seja contribuimos com o Kernel!</p>
+
+    <p><a href="https://lore.kernel.org/linux-iio/20250521143159.097d9b52@jic23-huawei/" target="_blank" style="color: #94b8d7;">🔗 Ver comentário de aceite</a></p>
+
+    <h2>❌ Envio 2 — Não aceito</h2>
+    <p>Essa alteração foi a que inicialmente pensamos ser a maior e mais necessária. Fizemos com cuidado, seguindo as descrições do munitor, mas o mantenedor que entende mais do sistema argumetou que a alteração não era necessária pois envolvia uma parte já tratada em outros módulos do IIO. Apesar disso, foi uma excelente experiência para entender como funciona a triagem e avaliação de contribuições.</p>
+
+    <p>A resposta foi técnica e educada — e esse tipo de retorno ajuda a crescer. Agora sabemos como apresentar melhor nossas ideias em futuras colaborações!</p>
+
+    <p><a href="https://lore.kernel.org/linux-iio/20250426163056.5e174f86@jic23-huawei/" target="_blank" style="color: #94b8d7;">🔗 Ver segundo comentário, não aceite</a></p>
+
+    <div class="dica">
+      <strong>💡 Dica:</strong> Nem todo patch será aceito — e tudo bem! O importante é aprender com cada etapa, entender o feedback dos mantenedores e continuar contribuindo. 💪
+    </div>
+  </main>  
+  
+  
+</body>
+</html>
