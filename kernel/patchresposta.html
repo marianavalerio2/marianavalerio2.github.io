@@ -89,6 +89,7 @@
     <a href="../tutoriais/tutorial5.html">Tutorial 5</a>
     <a href="../kernel/patch.html">🛠 Kernel</a>
     <a href="../kernel/patchresposta.html">🛠 Resposta Patch</a>
+    <a href="../kw/inicio.html">🛠 Entendimento KW</a>
   </nav>
 
   <main>
@@ -98,26 +99,33 @@
 
     <figure>
       <img src="imagens/patch_1.png" alt="Imagem da primeira alteração" style="max-width:100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px;">
-      <figcaption>🛠️ Primeiro envio de patch</figcaption>
+      <figcaption>🛠️ Primeiro patch</figcaption>
     </figure>
 
-    <h2>✅ Envio 1 — Aceito com observação</h1>
-    <p>Essa foi a nossa contribuição inicialmente menor, enviada pelo Arthur, mas que fazia a correção no Kconfig. Ela foi aceita! 🎉</p>
-
-    <p>O primeiro mantenedor, Jonathan Cameron fez um comentário por conta do título usando no envio do Patch, mas aceitou. 
-      
-    <p>Depois que o Jonathan Carmeron enviou, um novo mantenedor faz outro comentário, apenas observando que <strong>não havíamos feito o refresh</strong>. Provavelmente isso aconteceu porque demorou um pouco entre o envio inicial e o envio para o segundo mantenedor.</p>
-
-    <p>Ainda assim, ver nossa mudança entrando no repositório oficial foi muito bom! Ver que de fato por menor que seja contribuimos com o Kernel!</p>
-
-    <p><a href="https://lore.kernel.org/linux-iio/20250521143159.097d9b52@jic23-huawei/" target="_blank" style="color: #94b8d7;">🔗 Ver comentário de aceite</a></p>
-
-    <h2>❌ Envio 2 — Não aceito</h2>
-    <p>Essa alteração foi a que inicialmente pensamos ser a maior e mais necessária. Fizemos com cuidado, seguindo as descrições do munitor, mas o mantenedor que entende mais do sistema argumetou que a alteração não era necessária pois envolvia uma parte já tratada em outros módulos do IIO. Apesar disso, foi uma excelente experiência para entender como funciona a triagem e avaliação de contribuições.</p>
+    <h2>❌ Envio 1 — Não aceito</h2>
+    <p>Essa alteração foi a que inicialmente pensamos ser a maior e mais necessári e mais necessária. Fizemos com cuidado, seguindo as descrições do munitor, mas o mantenedor que entende mais do sistema argumetou que a alteração não era necessária pois envolvia uma parte já tratada em outros módulos do IIO. Apesar disso, foi uma excelente experiência para entender como funciona a triagem e avaliação de contribuições.</p>
 
     <p>A resposta foi técnica e educada — e esse tipo de retorno ajuda a crescer. Agora sabemos como apresentar melhor nossas ideias em futuras colaborações!</p>
 
     <p><a href="https://lore.kernel.org/linux-iio/20250426163056.5e174f86@jic23-huawei/" target="_blank" style="color: #94b8d7;">🔗 Ver segundo comentário, não aceite</a></p>
+
+    <figure>
+      <img src="imagens/patch_2.png" alt="Imagem da primeira alteração" style="max-width:100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px;">
+      <figcaption>🛠️ Segundo patch</figcaption>
+    </figure>
+
+    <h2>✅ Envio 2 — Aceito com observação</h1>
+    <p>Essa foi a nossa contribuição inicialmente menor, enviada pelo Arthur, mas que fazia a correção no Kconfig. Ela foi aceita! 🎉</p>
+
+    <p>Só descobrimos  esse erro ao compilar e testar o ajuste que fizemos em no primeiro envio.</p>
+
+    <p>O primeiro mantenedor, Jonathan Cameron fez um comentário por conta da tag Fixes <code>  Fixes: 00ef7708fa6 ("iio: adc: ti-ads1298: Add driver") </code> usando no envio do Patch, mas aceitou. 
+      
+    <p>Depois que o Jonathan Carmeron enviou, um novo mantenedor faz outro comentário, que não havia relação com a nossa mudança, e no final já enviou a alteração.</p>
+
+    <p>Ainda assim, ver nossa mudança entrando no repositório oficial foi muito bom! Ver que de fato por menor que seja contribuimos com o Kernel!</p>
+
+    <p><a href="https://lore.kernel.org/linux-iio/20250521143159.097d9b52@jic23-huawei/" target="_blank" style="color: #94b8d7;">🔗 Ver comentário de aceite</a></p>
 
     <div class="dica">
       <strong>💡 Dica:</strong> Nem todo patch será aceito — e tudo bem! O importante é aprender com cada etapa, entender o feedback dos mantenedores e continuar contribuindo. 💪
