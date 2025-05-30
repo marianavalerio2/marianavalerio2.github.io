@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contribuição KW</title>
+  <style>
+    :root {
+      --dark-1: #02152b;
+      --dark-2: #021d34;
+      --primary: #02253d;
+      --highlight: #94b8d7;
+      --accent: #7498b6;
+      --light-bg: #f2f7fa;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--highlight);
+      color: white;
+      display: flex;
+    }
+
+    nav {
+      width: 220px;
+      background-color: var(--dark-2);
+      padding: 20px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--light-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: var(--dark-1);
+    }
+
+    p {
+      line-height: 1.6;
+      color: #001b33;
+    }
+
+    .dica {
+      background: var(--highlight);
+      color: var(--dark-2);
+      border-left: 4px solid var(--accent);
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    a.tutorial-link {
+      color: var(--light-bg);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../mac0470/index.html">🏠 Início</a>
+    <a href="../mac0470/tutoriais/tutorial1.html">📘 Tutorial 1</a>
+    <a href="../mac0470/tutoriais/tutorial2.html">📙 Tutorial 2</a>
+    <a href="../mac0470/tutoriais/tutorial3.html">📗 Tutorial 3</a>
+    <a href="../mac0470/tutoriais/tutorial4.html">📕 Tutorial 4</a>
+    <a href="../mac0470/tutoriais/tutorial5.html">📓 Tutorial 5</a>
+    <a href="../mac0470/kernel/patch.html">🧩 Patch no Kernel</a>
+    <a href="../mac0470/kernel/patchresposta.html">📬 Resposta Patch</a>
+    <a href="../mac0470/kw/inicio.html">🔍 Entendimento KW</a>
+    <a href="../mac0470/kw/primeira_contribuicao.html">🚀 Contribuição KW</a>
+  </nav>
+
+  <main>
+    <h1>🎯 Primeira contribuição aceita no KWorkflow!</h1>
+  
+    <p>Depois de estudar o repositório do <strong>KWorkflow</strong> e analisar onde poderíamos contribuir, encontramos uma variável duplicada no código. Embora fosse uma mudança simples, ela traz mais clareza e organização para o projeto.</p>
+  
+    <p>📌 Criamos um pull request removendo a variável <code>'sharedir'</code>, que estava com o mesmo valor da <code>'datadir'</code>.</p>
+  
+    <p>📬 Nossa contribuição foi aceita com modificações, e já está na branch <strong>unstable</strong> do projeto! O mantenedor comentou que o PR foi integrado com ajustes. Muito feliz com esse resultado! 😊</p>
+  
+    <p><a href="https://github.com/kworkflow/kworkflow/pull/1218" target="_blank" style="color: #94b8d7;">🔗 Veja o pull request no GitHub</a></p>
+  
+    <div style="margin-top: 20px; text-align: center;">
+      <img src="imagens/patch_accepted_kw.png" alt="Imagem do PR aceito no KWorkflow" style="max-width: 100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+      <p style="color: #94b8d7; font-size: 0.9em;">📸 Captura do PR aceito</p>
+    </div>
+  
+    <div class="dica" style="margin-top: 30px; padding: 15px; border-radius: 10px; background-color: #021d34; color: #94b8d7;">
+      <strong>💡 Dica:</strong> Não subestime pequenas contribuições! Às vezes, corrigir algo simples pode ser o primeiro passo para ganhar confiança e se integrar à comunidade open source.
+    </div>
+  </main>  
+  
+</body>
+</html>
