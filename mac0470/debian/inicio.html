@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Entendendo KW</title>
+  <style>
+    :root {
+      --dark-1: #02152b;
+      --dark-2: #021d34;
+      --primary: #02253d;
+      --highlight: #94b8d7;
+      --accent: #7498b6;
+      --light-bg: #f2f7fa;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--highlight);
+      color: white;
+      display: flex;
+    }
+
+    nav {
+      width: 220px;
+      background-color: var(--dark-2);
+      padding: 20px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--light-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: var(--dark-1);
+    }
+
+    p {
+      line-height: 1.6;
+      color: #001b33;
+    }
+
+    .dica {
+      background: var(--highlight);
+      color: var(--dark-2);
+      border-left: 4px solid var(--accent);
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    a.tutorial-link {
+      color: var(--light-bg);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">🏠 Início</a>
+    <a href="../tutoriais/tutorial1.html">📘 Tutorial 1</a>
+    <a href="../tutoriais/tutorial2.html">📙 Tutorial 2</a>
+    <a href="../tutoriais/tutorial3.html">📗 Tutorial 3</a>
+    <a href="../tutoriais/tutorial4.html">📕 Tutorial 4</a>
+    <a href="../tutoriais/tutorial5.html">📓 Tutorial 5</a>
+    <a href="../kernel/patch.html">🧩 Patch no Kernel</a>
+    <a href="../kernel/patchresposta.html">📬 Resposta Patch</a>
+    <a href="../kw/inicio.html">🔍 Entendimento KW</a>
+    <a href="../kw/primeira_contribuicao.html">🚀 Contribuição KW</a>
+    <a href="../debian/inicio.html">🐧 Contribuição KW</a>
+  </nav>
+
+  <main>
+    <h1>Nova Etapa na Contribuição ao Debian 🚀🐧</h1>
+
+    <p>Após nossa primeira contribuição, avançamos mais um passo rumo ao universo do empacotamento no Debian! 🎯</p>
+
+    <h2>O que fizemos:</h2>
+    <ol>
+      <li>👩‍💻 Criei uma conta no <a href="https://salsa.debian.org" target="_blank">Salsa</a>, o GitLab oficial do projeto Debian.</li>
+      <li>📦 Segui o excelente tutorial da <a href="https://debianbrasil.org.br/pt-br/empacotamento/configurando-seu-ambiente" target="_blank">Debian Brasil</a> para configurar meu ambiente de desenvolvimento.</li>
+      <li>🧩 Escolhemos contribuir com o pacote <a href="https://salsa.debian.org/debian/devtodo" target="_blank">devtodo</a>.</li>
+      <li>🛠 Seguindo as instruções da <a href="https://debianbrasil.org.br/" target="_blank">Debian Brasil</a>, realizamos os passos de correção apontados na issue, fizemos o commit e submetemos no repositório.</li>
+    </ol>
+
+    <h2>Resultado Final 🎉✨</h2>
+    <p>A contribuição foi feita com sucesso! 🎊</p>
+
+    <img src="../patch_debian.png" alt="Contribuição no devtodo aceita no Salsa" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px; margin-top: 1rem;">
+  
+    <div class="dica" style="margin-top: 30px; padding: 15px; border-radius: 10px; background-color: #021d34; color: #94b8d7;">
+      <strong>💡 Dica:</strong> Tivemos dificuldades com o comando <code>debuild</code> até perceber que era necessário estar <strong>dentro da pasta do pacote</strong>, como por exemplo <code>cd devtodo</code>. Parece simples, mas salvou a execução! 😄
+    </div>
+  </main>  
+  
+</body>
+</html>
